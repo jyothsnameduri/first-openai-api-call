@@ -10,7 +10,7 @@ This application is a simple GUI interface that:
 4. Displays the AI's response
 5. Shows detailed token usage statistics
 
-![Application Screenshot](https://i.imgur.com/xKGFkRY.png)
+![Application Screenshot](./images/app_screenshot.png)
 
 ## How to Run It
 
