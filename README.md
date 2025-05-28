@@ -1,35 +1,38 @@
 # OpenAI Clinical Assistant
 
-A simple GUI application that interacts with OpenAI's GPT-3.5 Turbo model to provide clinical assistance. This application demonstrates how to make API calls to OpenAI, handle responses, and display token usage information.
+## What the Script Does
 
-## Features
+This application is a simple GUI interface that:
 
-- Clean, user-friendly Tkinter GUI
-- Real-time interaction with OpenAI's GPT-3.5 Turbo model
-- Specialized clinical assistant system prompt
-- Token usage tracking
-- Progress indicator during API calls
-- Error handling
+1. Takes user input through a clean Tkinter interface
+2. Uses a fixed clinical assistant system prompt
+3. Makes API calls to OpenAI's GPT-3.5 Turbo model
+4. Displays the AI's response
+5. Shows detailed token usage statistics
 
-## Prerequisites
+![Application Screenshot](https://i.imgur.com/xKGFkRY.png)
 
-- Python 3.6 or higher
-- OpenAI API key
+## How to Run It
 
-## Installation
+### Dependencies
+- Python 3.6+
+- OpenAI Python library
+- Tkinter (included with most Python installations)
 
-1. Clone this repository:
+### Setup
+
+1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/first-openai-api-call.git
+   git clone https://github.com/jyothsnameduri/first-openai-api-call.git
    cd first-openai-api-call
    ```
 
-2. Install the required dependencies:
+2. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
 
-3. Set up your OpenAI API key as an environment variable:
+3. Set your OpenAI API key as an environment variable:
    
    **Windows:**
    ```
@@ -40,30 +43,19 @@ A simple GUI application that interacts with OpenAI's GPT-3.5 Turbo model to pro
    ```
    export OPENAI_API_KEY=your_api_key_here
    ```
-   
-   Alternatively, you can modify the code to use your API key directly (not recommended for shared code).
 
-## Usage
+4. Run the application:
+   ```
+   python openai_chat_app.py
+   ```
 
-Run the application:
-```
-python openai_chat_app.py
-```
+### Using the Application
 
-1. Type your health-related question in the input area
-2. Click the "Send" button to submit your question
+1. Type your question in the input box
+2. Click "Send" to submit your question
 3. View the AI's response in the top text area
-4. Check token usage statistics at the bottom
+4. See token usage statistics at the bottom
 
 ## Security Note
 
-This application uses environment variables to handle the API key securely. Never commit your actual API key to a public repository.
-
-## License
-
-MIT
-
-## Acknowledgments
-
-- OpenAI for providing the API
-- Tkinter for the GUI framework
+This application uses environment variables for API key management. Never commit your actual API key to a public repository.
